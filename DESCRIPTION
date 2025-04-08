@@ -12,4 +12,5 @@ URL: https://github.com/ericofrs/luxJob
 BugReports: https://github.com/ericofrs/luxJob/issues
 Imports: 
     DBI,
+    glue,
     RPostgres
