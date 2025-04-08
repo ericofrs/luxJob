@@ -2,7 +2,7 @@
 #'
 #' Returns a list of recommended books. You can filter them by skill.
 #'
-#' @param param1
+#' @param skill
 #'
 #' @returns A data frame with columns 'book_id', 'title', 'author', and 'skill_id'.
 #' @export
