@@ -1,8 +1,12 @@
-# Overview
+# luxJob 
+
+<img src="man/figures/luxJob-logo.png" style="float: right; width: 150px;" />
+
+## Overview
 
 luxJob is an R package designed to connect to the Luxembourg Jobs database and perform various queries and analyses. It provides tools for accessing and analyzing job market data in Luxembourg, including vacancies, companies, skills, and learning tracks.
 
-# Installation
+## Installation
 
 You can install the development version of luxJob from GitHub with
 
@@ -11,7 +15,7 @@ You can install the development version of luxJob from GitHub with
 devtools::install_github("ericofrs/luxJob")
 ```
 
-# Features
+## Features
 
 - Connect to the Luxembourg Jobs database
 - Query and analyze job vacancies
@@ -21,7 +25,7 @@ devtools::install_github("ericofrs/luxJob")
 - Search for learning tracks
 - Search logs and historical data
 
-# Usage
+## Usage
 
 ```r
 library(luxJob)
@@ -36,7 +40,7 @@ get_vacancies(canton="Luxembourg")
 get_company_details(10)
 ```
 
-# Documentation
+## Documentation
 
 The package includes detailed documentation for all functions. After installation, you can access the help pages with:
 
@@ -45,6 +49,6 @@ The package includes detailed documentation for all functions. After installatio
 ?get_vacancies
 ```
 
-# License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
