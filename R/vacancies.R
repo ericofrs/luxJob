@@ -2,10 +2,10 @@
 #'
 #' Returns the list of vacancies. You can filter for occupation (job title), company_id and/or canton. You can also limit the number of rows.
 #'
-#' @param occupation
-#' @param company_id
-#' @param canton
-#' @param limit
+#' @param occupation Character. Optional filter for the occupation (job title).
+#' @param company_id Integer. Optional filter for company_id.
+#' @param canton Character. Optional filter for canton in Luxembourg.
+#' @param limit Integer. The maximum number of vacancies to return.
 #'
 #' @returns A data frame with the columns vacancy_id, company_id, occupation, canton, year and month.
 #' @export
@@ -54,10 +54,10 @@ get_vacancies <- function(occupation = NULL, company_id = NULL, canton = NULL, l
 #'
 #' Returns the list of vacancies. You can filter for skill_id, company_id and/or canton. You can also limit the number of rows.
 #'
-#' @param skill_id
-#' @param company_id
-#' @param canton
-#' @param limit
+#' @param skill_id Character.
+#' @param company_id Integer. Optional filter for company_id.
+#' @param canton Character. Optional filter for canton in Luxembourg.
+#' @param limit Integer. The maximum number of vacancies to return.
 #'
 #' @returns A data frame with the columns vacancy_id, company_id, occupation, canton, year, month and skill_id.
 #' @export
@@ -105,7 +105,7 @@ set_null_if_empty <- function(df) {
 #'
 #' Returns the selected vacancy and the skills connected to it.
 #'
-#' @param vacancy_id
+#' @param vacancy_id Integer. Filter for the vancancy_id.
 #'
 #' @returns A list with two data frames, the first one contains the vacancy details and the second one contains the skills associated with that vacancy.
 #' @export

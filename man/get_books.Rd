@@ -7,7 +7,7 @@
 get_books(skill = NULL)
 }
 \arguments{
-\item{param1}{}
+\item{skill}{character. Optional filter the book recommendations for skill_label.}
 }
 \value{
 A data frame with columns 'book_id', 'title', 'author', and 'skill_id'.

@@ -2,7 +2,7 @@
 #'
 #' Returns a list of learning tracks.
 #'
-#' @param skill_id
+#' @param skill_id Character. Optional filter the learning tracks for skill_id.
 #'
 #' @returns A data frame with columns 'track_id', 'title', 'description' and 'url'.
 #' @export
@@ -45,7 +45,7 @@ set_null_if_empty <- function(df) {
 #'
 #' Returns the selected learning track and the skills connected to it.
 #'
-#' @param track_id
+#' @param track_id Integer. Filter the learning track for its id.
 #'
 #' @returns A list with two data frames, the first one contains the learning track details and the second one contains the details of the skills associated with that learning track
 #' @export

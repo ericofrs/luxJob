@@ -14,5 +14,6 @@ Imports:
     DBI,
     glue,
     ids,
-    renv,
     RPostgres
+Suggests:
+    renv

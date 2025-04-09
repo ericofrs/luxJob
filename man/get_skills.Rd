@@ -7,13 +7,15 @@
 get_skills(limit = 100, ordered = c("no", "yes"))
 }
 \arguments{
-\item{ordered}{}
+\item{limit}{Integer. The maximum number of skills to return.}
+
+\item{ordered}{Character. Optional select if the list will be sorted or not.}
 }
 \value{
 A dataframe with columns 'skill_id' and 'skill_label', limited number of rows and alphabetically ordered or not.
 }
 \description{
-Get list of skills
+Returns a list of skills. You can limit the number of rows and order the skills alphabetically.
 }
 \examples{
 \dontrun{

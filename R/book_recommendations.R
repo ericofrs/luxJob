@@ -2,7 +2,7 @@
 #'
 #' Returns a list of recommended books. You can filter them by skill.
 #'
-#' @param skill
+#' @param skill character. Optional filter the book recommendations for skill_label.
 #'
 #' @returns A data frame with columns 'book_id', 'title', 'author', and 'skill_id'.
 #' @export
@@ -38,7 +38,7 @@ get_books <- function(skill = NULL){
 #'
 #' Returns the book selected by its ID.
 #'
-#' @param book_id
+#' @param book_id Integer. Filter the list for the book_id.
 #'
 #' @returns A data frame with one row containing 'book_id', 'title', 'author' and 'skill_id'
 #' @export

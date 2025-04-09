@@ -7,13 +7,13 @@
 get_learning_track_by_id(track_id)
 }
 \arguments{
-\item{track_id}{}
+\item{track_id}{Integer. Filter the learning track for its id.}
 }
 \value{
 A list with two data frames, the first one contains the learning track details and the second one contains the details of the skills associated with that learning track
 }
 \description{
-Get learning track and its skills
+Returns the selected learning track and the skills connected to it.
 }
 \examples{
 \dontrun{

@@ -2,7 +2,7 @@
 #'
 #' Returns a list of companies. You can limit the number of rows.
 #'
-#' @param limit
+#' @param limit Integer. The maximum number of companies to return.
 #'
 #' @returns A dataframe with columns 'company_id', 'name' and 'sector' with limited number of rows.
 #' @export
@@ -38,7 +38,7 @@ set_null_if_empty <- function(df) {
 #'
 #' Returns the company selected by its ID and the vacancies related to it.
 #'
-#' @param company_id
+#' @param company_id Integer. Filter the results for company_id.
 #'
 #' @returns A list with two data frames, the first one contains the company details and the second one contains the details of the vacancies associated with that company.
 #' @export

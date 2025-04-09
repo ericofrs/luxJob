@@ -7,13 +7,13 @@
 get_companies(limit = 100)
 }
 \arguments{
-\item{limit}{}
+\item{limit}{Integer. The maximum number of companies to return.}
 }
 \value{
 A dataframe with columns 'company_id', 'name' and 'sector' with limited number of rows.
 }
 \description{
-Get list of companies
+Returns a list of companies. You can limit the number of rows.
 }
 \examples{
 \dontrun{

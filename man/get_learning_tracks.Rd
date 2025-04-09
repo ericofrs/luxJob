@@ -7,13 +7,13 @@
 get_learning_tracks(skill_id = NULL)
 }
 \arguments{
-\item{skill_id}{}
+\item{skill_id}{Character. Optional filter the learning tracks for skill_id.}
 }
 \value{
 A data frame with columns 'track_id', 'title', 'description' and 'url'.
 }
 \description{
-Get Learning Tracks
+Returns a list of learning tracks.
 }
 \examples{
 \dontrun{

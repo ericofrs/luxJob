@@ -7,16 +7,16 @@
 get_company_details(company_id)
 }
 \arguments{
-\item{company_id}{}
+\item{company_id}{Integer. Filter the results for company_id.}
 }
 \value{
-A list with two data frames, the first one contains the company details and the second contains the details of the vacancies associated with that company.
+A list with two data frames, the first one contains the company details and the second one contains the details of the vacancies associated with that company.
 }
 \description{
-Get company and its vacancies
+Returns the company selected by its ID and the vacancies related to it.
 }
 \examples{
-#' \dontrun{
+\dontrun{
 get_company_details(10)
 }
 }

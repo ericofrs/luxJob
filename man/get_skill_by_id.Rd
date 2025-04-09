@@ -7,13 +7,13 @@
 get_skill_by_id(skill_id)
 }
 \arguments{
-\item{skill_id}{}
+\item{skill_id}{Character. Filter for the skill_id.}
 }
 \value{
 A data frame with columns 'skill_id' and 'skill_label'
 }
 \description{
-Get Skill by ESCO skill ID
+Returns a specific skill selected by its ID.
 }
 \examples{
 get_skill_by_id("http://data.europa.eu/esco/skill/a276b1ad-c0b7-4b33-899c-0fbfcdbe0eee")

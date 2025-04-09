@@ -2,8 +2,8 @@
 #'
 #' Insert your query in the search log.
 #'
-#' @param user_id
-#' @param query
+#' @param user_id Integer. Optional insert the user_id.
+#' @param query Character. Query to be posted in the search log.
 #'
 #' @returns A message confirming the action.
 #' @export

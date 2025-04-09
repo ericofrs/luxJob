@@ -2,8 +2,8 @@
 #'
 #' Returns a list of skills. You can limit the number of rows and order the skills alphabetically.
 #'
-#' @param limit
-#' @param ordered
+#' @param limit Integer. The maximum number of skills to return.
+#' @param ordered Character. Optional select if the list will be sorted or not.
 #'
 #' @returns A dataframe with columns 'skill_id' and 'skill_label', limited number of rows and alphabetically ordered or not.
 #' @export
@@ -47,7 +47,7 @@ get_skills <- function(limit = 100, ordered = c("no", "yes")){
 #'
 #' Returns a specific skill selected by its ID.
 #'
-#' @param skill_id
+#' @param skill_id Character. Filter for the skill_id.
 #'
 #' @returns A data frame with columns 'skill_id' and 'skill_label'
 #' @export
