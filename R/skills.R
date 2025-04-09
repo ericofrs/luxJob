@@ -1,5 +1,7 @@
 #' Get list of skills
 #'
+#' Returns a list of skills. You can limit the number of rows and order the skills alphabetically.
+#'
 #' @param limit
 #' @param ordered
 #'
@@ -42,6 +44,8 @@ get_skills <- function(limit = 100, ordered = c("no", "yes")){
 
 
 #' Get Skill by ESCO skill ID
+#'
+#' Returns a specific skill selected by its ID.
 #'
 #' @param skill_id
 #'

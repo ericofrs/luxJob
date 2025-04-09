@@ -1,5 +1,7 @@
 #' Get vacancies
 #'
+#' Returns the list of vacancies. You can filter for occupation (job title), company_id and/or canton. You can also limit the number of rows.
+#'
 #' @param occupation
 #' @param company_id
 #' @param canton
@@ -50,6 +52,8 @@ get_vacancies <- function(occupation = NULL, company_id = NULL, canton = NULL, l
 
 #' Get Vancancies and their skills
 #'
+#' Returns the list of vacancies. You can filter for skill_id, company_id and/or canton. You can also limit the number of rows.
+#'
 #' @param skill_id
 #' @param company_id
 #' @param canton
@@ -98,6 +102,8 @@ set_null_if_empty <- function(df) {
 }
 
 #' Get vacancy and its skills
+#'
+#' Returns the selected vacancy and the skills connected to it.
 #'
 #' @param vacancy_id
 #'

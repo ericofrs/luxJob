@@ -36,6 +36,8 @@ get_books <- function(skill = NULL){
 
 #' Get Book by ID
 #'
+#' Returns the book selected by its ID.
+#'
 #' @param book_id
 #'
 #' @returns A data frame with one row containing 'book_id', 'title', 'author' and 'skill_id'

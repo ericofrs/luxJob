@@ -13,4 +13,6 @@ BugReports: https://github.com/ericofrs/luxJob/issues
 Imports: 
     DBI,
     glue,
+    ids,
+    renv,
     RPostgres

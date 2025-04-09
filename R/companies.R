@@ -1,5 +1,7 @@
 #' Get list of companies
 #'
+#' Returns a list of companies. You can limit the number of rows.
+#'
 #' @param limit
 #'
 #' @returns A dataframe with columns 'company_id', 'name' and 'sector' with limited number of rows.
@@ -34,12 +36,15 @@ set_null_if_empty <- function(df) {
 
 #' Get company and its vacancies
 #'
+#' Returns the company selected by its ID and the vacancies related to it.
+#'
 #' @param company_id
 #'
-#' @returns A list with two data frames, the first one contains the company details and the second contains the details of the vacancies associated with that company.
+#' @returns A list with two data frames, the first one contains the company details and the second one contains the details of the vacancies associated with that company.
 #' @export
 #'
-#' @examples#' \dontrun{
+#' @examples
+#' \dontrun{
 #' get_company_details(10)
 #' }
 get_company_details <- function(company_id){

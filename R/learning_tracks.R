@@ -1,5 +1,7 @@
 #' Get Learning Tracks
 #'
+#' Returns a list of learning tracks.
+#'
 #' @param skill_id
 #'
 #' @returns A data frame with columns 'track_id', 'title', 'description' and 'url'.
@@ -40,6 +42,8 @@ set_null_if_empty <- function(df) {
 }
 
 #' Get learning track and its skills
+#'
+#' Returns the selected learning track and the skills connected to it.
 #'
 #' @param track_id
 #'
