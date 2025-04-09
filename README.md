@@ -1,6 +1,6 @@
-# luxJob 
-
-<img src="man/figures/luxJob-logo.png" style="float: right; width: 150px;" />
+<p align="right">
+  <img src="man/figures/luxJob-logo-nbg.png" width="150" />
+</p>
 
 ## Overview
 
