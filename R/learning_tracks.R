@@ -18,9 +18,8 @@
 get_learning_tracks <-  function(skill_id = NULL){
   con <- connect_db()
   if (is.null(skill_id)) {
-    query <- "SELECT br.book_id, br.title, br.author, s.skill_label
-              FROM adem.book_recommendations br
-              JOIN adem.skills s ON br.skill_id = s.skill_id;"
+    query <- "SELECT lt.*
+              FROM adem.learning_tracks lt;"
   } else {
     query <- glue::glue_sql("SELECT lt.*
                               FROM adem.learning_tracks lt
