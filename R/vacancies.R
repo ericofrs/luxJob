@@ -25,7 +25,6 @@ get_vacancies <- function(occupation = NULL, company_id = NULL, canton = NULL, l
                             WHERE 1=1",
                           .con = con)
 
-  # Dynamically add filters if they're not NULL
   if (!is.null(occupation)) {
     query <- glue::glue_sql("{query} AND v.occupation = {occupation}", .con = con)
   }
@@ -38,10 +37,10 @@ get_vacancies <- function(occupation = NULL, company_id = NULL, canton = NULL, l
     query <- glue::glue_sql("{query} AND v.canton = {canton}", .con = con)
   }
 
-  # Add LIMIT clause
-  query <- glue::glue_sql("{query} LIMIT {limit}", .con = con)
+  if (limit != Inf){
+    query <- glue::glue_sql("{query} LIMIT {limit}", .con = con)
+  }
 
-  # Run query
   result <- DBI::dbGetQuery(con, query)
   DBI::dbDisconnect(con)
 
@@ -70,6 +69,8 @@ get_vacancies <- function(occupation = NULL, company_id = NULL, canton = NULL, l
 #' }
 get_vacancies_with_skill <- function(skill_id = NULL, company_id = NULL, canton = NULL, limit = 100) {
   con <- connect_db()
+
+  #Start base query
   query <- glue::glue_sql("SELECT v.*, vs.skill_id
                             FROM adem.vacancies v
                             JOIN adem.vacancy_skills vs ON v.vacancy_id = vs.vacancy_id
@@ -88,7 +89,9 @@ get_vacancies_with_skill <- function(skill_id = NULL, company_id = NULL, canton 
     query <- glue::glue_sql("{query} AND v.canton = {canton}", .con = con)
   }
 
-  query <- glue::glue_sql("{query} LIMIT {limit}", .con = con)
+  if (limit != Inf){
+    query <- glue::glue_sql("{query} LIMIT {limit}", .con = con)
+  }
 
   result <- DBI::dbGetQuery(con, query)
   DBI::dbDisconnect(con)

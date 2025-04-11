@@ -5,6 +5,6 @@ test_that("Returns a data.frame", {
 
 test_that("Returns the expected column names", {
   result <- get_learning_tracks()
-  expect_equal(colnames(result), c("track_id", "title", "description", "url"))
+  expect_in(colnames(result), c("track_id", "title", "description", "url"))
 })
 

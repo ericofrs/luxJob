@@ -53,7 +53,9 @@ get_skills <- function(limit = 100, ordered = c("no", "yes")){
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' get_skill_by_id("http://data.europa.eu/esco/skill/a276b1ad-c0b7-4b33-899c-0fbfcdbe0eee")
+#' }
 get_skill_by_id <- function(skill_id){
   con <- connect_db()
   query <- glue::glue_sql("SELECT *

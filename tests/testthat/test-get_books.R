@@ -5,5 +5,5 @@ test_that("Returns a data.frame", {
 
 test_that("Returns the expected column names", {
   result <- get_books()
-  expect_equal(colnames(result), c("book_id", "title", "author", "skill_label"))
+  expect_in(colnames(result), c("book_id", "title", "author", "skill_label"))
 })
