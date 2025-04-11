@@ -16,5 +16,7 @@ A data frame with columns 'skill_id' and 'skill_label'
 Returns a specific skill selected by its ID.
 }
 \examples{
+\dontrun{
 get_skill_by_id("http://data.europa.eu/esco/skill/a276b1ad-c0b7-4b33-899c-0fbfcdbe0eee")
+}
 }
