@@ -1,6 +1,6 @@
 Package: luxJob
 Title: Luxembourg Job data
-Version: 0.1.0.0000
+Version: 0.1.1.0000
 Authors@R: 
     person("Erico", "Farias", , "ericoqv@gmail.com", role = c("aut", "cre"))
 Description: Connects to the Lux Jobs database and perform queries.
@@ -17,5 +17,6 @@ Imports:
     RPostgres
 Suggests:
     renv,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 Config/testthat/edition: 3
