@@ -4,12 +4,10 @@
 \alias{verify_token}
 \title{Verify token}
 \usage{
-verify_token(token, schema = "student_erico")
+verify_token(token)
 }
 \arguments{
 \item{token}{Character. Bearer token to access the database}
-
-\item{schema}{Character. Optional the schema in the database}
 }
 \value{
 Boolean TRUE or FALSE
